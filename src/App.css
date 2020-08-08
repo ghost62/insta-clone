@@ -1,20 +1,41 @@
 * {
   margin: 0;
-  
 }
 
 .app {
   background-color: #fafafa;
-  /* height: 100vh; */
 }
 
-.app__header{
+.app__header {
+  position: sticky;
   object-fit: contain;
+  top: 0;
+  z-index: 1;
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
 }
-.app__signup{
+
+.app__headerImage {
+  object-fit: contain;
+}
+.app__signup {
   display: flex;
   flex-direction: column;
+}
+.app__post{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.app__postright{
+  margin-left: 20px;
+}
+.upload__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
